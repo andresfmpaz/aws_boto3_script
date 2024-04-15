@@ -26,7 +26,7 @@ def get_instance_info(region_name):
     timestamp_actual = datetime.now()
 
     timestamp_formateado = timestamp_actual.strftime('%Y_%m_%d_%H_%M_%S')
-    with open('/Users/andresmeneses/Documents/Proyectos_AM/PythonProjects/aws_boto3_script/instance_details1'+timestamp_formateado+'.csv', 'w', newline='') as file:
+    with open('/path/instance_details1'+timestamp_formateado+'.csv', 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['Family', 'Instance Type', 'vCPU', 'Memory', 'Operating System', 'Price'])
 
